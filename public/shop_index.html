@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+  <!--<link rel="stylesheet" href="css/base.css">-->
+  <link rel="stylesheet" href="css/shop/index.css">
+  <link rel="stylesheet" href="css/shop/header.css">  
+</head>
+<body>
+  <div class="header">
+        <div class="logo">
+          <img src="img/shop/header/logo.png" alt="">
+        </div>
+        <div class="search">
+          <input type="text" placeholder="真无线耳机" class="searchl">
+        </div>
+        <div class="cart">
+          <a href="#">
+              <img src="img/shop/header/cart.png" alt="">
+          </a>
+        </div>
+        <div class="m-select f-pr" id="msg">
+          <div class="content-bar">
+            <a href="login.html">登录</a>
+            <span>|</span>
+            <a href="reg.html">注册</a>
+          </div>
+        </div>  
+      </div>
+  <main id="main" class="container">
+    <div id="banner">
+      <div id="btn-left"></div>
+      <ul id="ul-imgs" style="width:5500px; margin-left:0px;">
+        <li><a href="javascript:;"><img src="img/shop/index/banner1.png"></a></li>
+        <li><a href="javascript:;"><img src="img/shop/index/banner2.png"></a></li>
+        <li><a href="javascript:;"><img src="img/shop/index/banner3.png"></a></li>
+        <li><a href="javascript:;"><img src="img/shop/index/banner4.png"></a></li>
+        <!--注意！最后li个数要比实际图片张数多1，最后一个li里的img是重复第一张li的图片-->
+        <li><a href="javascript:;"><img src="img/shop/index/banner1.png"></a></li>
+      </ul>
+      <ul id="ul-idxs">
+        <!--虽然li个数比实际图片张数多1，但小圆点的个数不必多1-->
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div id="btn-right"></div>
+    </div>
+    <div class="g-tab">
+      <div class="hometab">
+          <ul class="f-tc f-cb">
+            <li class="tab">
+              <a href="">
+                <img src="img/shop/index/1.png" alt="">
+                <span class="f-thide">数码影音</span>
+              </a>
+              <em class="line"></em>
+            </li>
+            <li class="tab">
+              <a href="">
+                <img src="img/shop/index/2.png" alt="">
+                <span class="f-thide">IP周边</span>
+              </a>
+              <em class="line"></em>
+            </li>
+            <li class="tab">
+              <a href="">
+                <img src="img/shop/index/3.png" alt="">
+                <span class="f-thide">热销爆品</span>
+              </a>
+              <em class="line"></em>
+            </li>
+            <li class="tab">
+              <a href="">
+                <img src="img/shop/index/4.png" alt="">
+                <span class="f-thide">积分商城</span>
+              </a>
+              <em class="line"></em>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="g-bd g-bd-home">
+      <div id="g-main" class="ma">
+        <div id="module-root" class="n-index">
+          <div class="subjs f-cb">
+            <div class="subj pad-right">
+              <a href="#">
+                <img src="img/shop/index/01.png" alt="">
+              </a>
+            </div>
+            <div class="subj">
+              <a href="#">
+                <img src="img/shop/index/02.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="m-block" style="min-height:816px;" id="m-block-hot">
+            <span class="mid-txt mid-bold">编辑推荐</span>
+            <div id="recmd-list">
+              <div class="m-product">
+                <ul class="list f-cb">
+                  <li data-action="bircd" data-inndex="0" id="p1">
+                    <!--<div>
+                      <a href="#" class="cover f-pr f-blk j-statistics">
+                        <img src="img/shop/index/01.jpg" alt="" class="f-img">
+                        <span class="spec f-pa">
+                          <span class="origin f-pa">￥99</span>
+                          <span class="cut f-pa">
+                            <del>￥179</del>
+                          </span>
+                        </span>
+                      </a>
+                      <div class="cnt f-tc">
+                        <h3 class="f-thide2">
+                          <span class="tag tag-red">
+                            <em>特价</em>
+                          </span>
+                          <a href="#" target="_blank">伯朗 i10max真无线蓝牙耳机苹果安卓通用</a>
+                        </h3>
+                        <p class="txt f-thide">
+                          ￥<em>99</em>
+                        </p>
+                      </div>
+                    </div>-->
+                  </li>
+                  <li data-action="bircd" data-inndex="1" id="p2">
+                    <!--<div>
+                      <a href="#" class="cover f-pr f-blk j-statistics">
+                        <img src="img/shop/index/02.jpg" alt="" class="f-img">
+                        <span class="spec f-pa">
+                          <span class="origin f-pa">￥69</span>
+                          <span class="cut f-pa">
+                            <del>￥79</del>
+                          </span>
+                        </span>
+                      </a>
+                      <div class="cnt f-tc">
+                        <h3 class="f-thide2">
+                          <span class="tag tag-red">
+                            <em>特价</em>
+                          </span>
+                          <a href="#" target="_blank">网易云音乐 蓝调布鲁斯口琴 经典红色 音乐的力量</a>
+                        </h3>
+                        <p class="txt f-thide">
+                          ￥<em>69</em>
+                        </p>
+                      </div>
+                    </div>-->
+                  </li>
+                  <li data-action="bircd" data-inndex="2" id="p3">
+                    <!--<div>
+                      <a href="#" class="cover f-pr f-blk j-statistics">
+                        <img src="img/shop/index/3.jpg" alt="" class="f-img">
+                        <span class="spec f-pa">
+                          <span class="origin f-pa">￥59</span>
+                          <span class="cut f-pa">
+                            <del>￥89</del>
+                          </span>
+                        </span>
+                      </a>
+                      <div class="cnt f-tc">
+                        <h3 class="f-thide2">
+                          <span class="tag tag-red">
+                            <em>特价</em>
+                          </span>
+                          <a href="#" target="_blank">伯朗 i10max真无线蓝牙耳机苹果安卓通用</a>
+                        </h3>
+                        <p class="txt f-thide">
+                          ￥<em>59</em>
+                        </p>
+                      </div>
+                    </div>-->
+                  </li>
+                  <li data-action="bircd" data-inndex="3" id="p4">
+                    <!--<div>
+                      <a href="#" class="cover f-pr f-blk j-statistics">
+                        <img src="img/shop/index/04.jpg" alt="" class="f-img">
+                      </a>
+                      <div class="cnt f-tc">
+                        <h3 class="f-thide2">
+                          <span class="tag tag-red">
+                            <em>用劵减50</em>
+                          </span>
+                          <a href="#" target="_blank">网易云音乐联名款无线蓝牙耳机TWS1</a>
+                        </h3>
+                        <p class="txt f-thide">
+                          ￥<em>298</em>
+                        </p>
+                      </div>
+                    </div>-->
+                  </li>
+                  <li data-action="bircd" data-inndex="4" id="p5">
+                      <!--<div>
+                        <a href="#" class="cover f-pr f-blk j-statistics">
+                          <img src="img/shop/index/05.jpg" alt="" class="f-img">
+                          <span class="spec f-pa">
+                            <span class="origin f-pa">￥29</span>
+                            <span class="cut f-pa">
+                              <del>￥168</del>
+                            </span>
+                          </span>
+                        </a>
+                        <div class="cnt f-tc">
+                          <h3 class="f-thide2">
+                            <span class="tag tag-red">
+                              <em>特价</em>
+                            </span>
+                            <a href="#" target="_blank">网易云音乐经典红系列 黑胶裸背硬面笔记本</a>
+                            </h3>
+                          <p class="txt f-thide">
+                            ￥<em>29</em>
+                          </p>
+                        </div>
+                      </div>-->
+                  </li>
+                  <li data-action="bircd" data-inndex="5" id="p6">
+                      <!--<div>
+                        <a href="#" class="cover f-pr f-blk j-statistics">
+                          <img src="img/shop/index/06.jpg" alt="" class="f-img">
+                          <span class="spec f-pa">
+                            <span class="origin f-pa">￥89</span>
+                            <span class="cut f-pa">
+                              <del>￥169</del>
+                            </span>
+                          </span>
+                        </a>
+                        <div class="cnt f-tc">
+                          <h3 class="f-thide2">
+                            <span class="tag tag-red">
+                              <em>特价</em>
+                            </span>
+                            <a href="#" target="_blank">伯朗 i9s真无线蓝牙耳机v5.0双耳通话苹果安卓通用</a>
+                          </h3>
+                          <p class="txt f-thide">
+                            ￥<em>89</em>
+                          </p>
+                        </div>
+                      </div>-->
+                </li>
+
+                  <li data-action="bircd" data-inndex="6">
+                        <div>
+                          <a href="#" class="cover f-pr f-blk j-statistics">
+                            <img src="img/shop/index/07.jpg" alt="" class="f-img">
+                            <span class="spec f-pa">
+                              <span class="origin f-pa">￥99</span>
+                              <span class="cut f-pa">
+                                <del>￥159</del>
+                              </span>
+                            </span>
+                          </a>
+                          <div class="cnt f-tc">
+                            <h3 class="f-thide2">
+                              <span class="tag tag-red">
+                                <em>特价</em>
+                              </span>
+                              <a href="#" target="_blank">兰士顿D4线控重低音炮四核双动圈耳机，苹果安卓通用 带麦</a>
+                            </h3>
+                            <p class="txt f-thide">
+                              ￥<em>99</em>
+                            </p>
+                          </div>
+                        </div>
+                  </li>
+                  <li data-action="bircd" data-inndex="7">
+                        <div>
+                          <a href="#" class="cover f-pr f-blk j-statistics">
+                            <img src="img/shop/index/08.jpg" alt="" class="f-img">
+                            <span class="spec f-pa">
+                              <span class="origin f-pa">￥56</span>
+                              <span class="cut f-pa">
+                                <del>￥99</del>
+                              </span>
+                            </span>
+                          </a>
+                          <div class="cnt f-tc">
+                            <h3 class="f-thide2">
+                              <span class="tag tag-red">
+                                <em>特价</em>
+                              </span>
+                              <a href="#" target="_blank">网易云音乐运动斜挎包</a>
+                            </h3>
+                            <p class="txt f-thide">
+                              ￥<em>56</em>
+                            </p>
+                          </div>
+                        </div>
+                  </li>  
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <div class="digalb f-mgt10" >
+            <div class="cnt">
+              <div class="inner">
+                <span>
+                  <i></i>
+                  数字专辑
+                </span>
+                <p class="f-thide">
+                  Avril Lavigner全新专辑火热售卖中
+                  <em class="p-cover"></em>
+                </p>
+                <a href="javascript:;">立即购买></a>
+              </div>
+            </div>
+            <div class="covers f-pa">
+              <img src="img/shop/index/s.jpg" alt="" class="sml">
+              <img src="img/shop/index/b.jpg" alt="" class="big">
+              <i class="circle"></i>
+            </div>
+          </div>
+          <div class="m-block">  
+            <span class="mid-txt mid-bold">热门商品</span>
+            <div id="recmd-list">
+              <div class="m-product">
+                <ul class="list f-cb">
+                  <li data-action="bircd" data-inndex="0">
+                    <div>
+                      <a href="#" class="cover f-pr f-blk j-statistics">
+                        <img src="img/shop/index/09.jpg" alt="" class="f-img">
+                        <span class="spec f-pa">
+                          <span class="origin f-pa">￥299</span>
+                          <span class="cut f-pa">
+                            <del>￥399</del>
+                          </span>
+                        </span>
+                      </a>
+                      <div class="cnt f-tc">
+                        <h3 class="f-thide2">
+                          <span class="tag tag-red">
+                            <em>特价</em>
+                          </span>
+                          <a href="#" target="_blank">伯朗 E43真无线蓝牙耳机蓝牙5.0超长待机安卓苹果通用双耳通话</a>
+                        </h3>
+                        <p class="txt f-thide">
+                          ￥<em>299</em>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                    <li data-action="bircd" data-inndex="1">
+                      <div>
+                        <a href="#" class="cover f-pr f-blk j-statistics">
+                          <img src="img/shop/index/10.jpg" alt="" class="f-img">
+                          <span class="spec f-pa">
+                            <span class="origin f-pa">￥149</span>
+                            <span class="cut f-pa">
+                              <del>￥179</del>
+                            </span>
+                          </span>
+                        </a>
+                        <div class="cnt f-tc">
+                          <h3 class="f-thide2">
+                            <span class="tag tag-red">
+                              <em>特价</em>
+                            </span>
+                            <a href="#" target="_blank">网易云音乐&本来设计 原木创意手机 支架手机座扩音器</a>
+                          </h3>
+                          <p class="txt f-thide">
+                            ￥<em>149</em>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-action="bircd" data-inndex="2">
+                      <div>
+                        <a href="#" class="cover f-pr f-blk j-statistics">
+                          <img src="img/shop/index/11.jpg" alt="" class="f-img">
+                          </span>
+                        </a>
+                        <div class="cnt f-tc">
+                          <h3 class="f-thide2">
+                            <a href="#" target="_blank">击音【触控级】 降噪防水手势识别蓝牙运动耳机</a>
+                          </h3>
+                          <p class="txt f-thide">
+                            ￥<em>149</em>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-action="bircd" data-inndex="3">
+                      <div>
+                        <a href="#" class="cover f-pr f-blk j-statistics">
+                          <img src="img/shop/index/12.jpg" alt="" class="f-img">
+                        </a>
+                        <div class="cnt f-tc">
+                          <h3 class="f-thide2">
+                            
+                            <a href="#" target="_blank">本来设计 原创木制冰箱磁贴 创意礼品生日礼物</a>
+                          </h3>
+                          <p class="txt f-thide">
+                            ￥<em>59</em>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-action="bircd" data-inndex="4">
+                        <div>
+                          <a href="#" class="cover f-pr f-blk j-statistics">
+                            <img src="img/shop/index/13.jpg" alt="" class="f-img">
+                          </a>
+                          <div class="cnt f-tc">
+                            <h3 class="f-thide2">
+                              <span class="tag tag-red">
+                                <em>用券减30</em>
+                              </span>
+                              <a href="#" target="_blank">网易云音乐定制款款W800X 头戴式蓝牙耳机</a>
+                              </h3>
+                            <p class="txt f-thide">
+                              ￥<em>199</em>
+                            </p>
+                          </div>
+                        </div>
+                    </li>
+                    
+                    <li data-action="bircd" data-inndex="6">
+                        <div>
+                          <a href="#" class="cover f-pr f-blk j-statistics">
+                            <img src="img/shop/index/14.jpg" alt="" class="f-img">
+                          </a>
+                          <div class="cnt f-tc">
+                            <h3 class="f-thide2">
+                              <span class="tag tag-red">
+                                <em>用券减40</em>
+                              </span>
+                              <a href="#" target="_blank">JBL C200SI立体声入耳式耳机手机式音乐耳机 运动游戏耳机 耳机耳麦 带麦可通话</a>
+                            </h3>
+                            <p class="txt f-thide">
+                              ￥<em>138</em>
+                            </p>
+                          </div>
+                        </div>
+                  </li>
+
+                    <li data-action="bircd" data-inndex="6">
+                          <div>
+                            <a href="#" class="cover f-pr f-blk j-statistics">
+                              <img src="img/shop/index/15.jpg" alt="" class="f-img">
+                            </a>
+                            <div class="cnt f-tc">
+                              <h3 class="f-thide2">
+                                <span class="tag tag-red">
+                                  <em>用券减130</em>
+                                </span>
+                                <a href="#" target="_blank">网易云音乐氧气蓝牙耳机Pro版</a>
+                              </h3>
+                              <p class="txt f-thide">
+                                ￥<em>399</em>
+                              </p>
+                            </div>
+                          </div>
+                    </li>
+                    <li data-action="bircd" data-inndex="7">
+                          <div>
+                            <a href="#" class="cover f-pr f-blk j-statistics">
+                              <img src="img/shop/index/16.jpg" alt="" class="f-img">
+                              
+                            </a>
+                            <div class="cnt f-tc">
+                              <h3 class="f-thide2">
+                                <a href="#" target="_blank">JBL GO 2音乐金砖二代 便携蓝牙音箱</a>
+                              </h3>
+                              <p class="txt f-thide">
+                                ￥<em>299</em>
+                              </p>
+                            </div>
+                          </div>
+                    </li> 
+                    <li data-action="bircd" data-inndex="0">
+                        <div>
+                          <a href="#" class="cover f-pr f-blk j-statistics">
+                            <img src="img/shop/index/17.jpg" alt="" class="f-img">
+                          </a>
+                          <div class="cnt f-tc">
+                            <h3 class="f-thide2">
+                              
+                              <a href="#" target="_blank">JBL Pulse3 音乐脉动3 炫彩蓝牙小音箱 低音炮 便携迷你音箱 可免提通话 防水设计</a>
+                            </h3>
+                            <p class="txt f-thide">
+                              ￥<em>1599</em>
+                            </p>
+                          </div>
+                        </div>
+                    </li>
+                        <li data-action="bircd" data-inndex="1">
+                          <div>
+                            <a href="#" class="cover f-pr f-blk j-statistics">
+                              <img src="img/shop/index/18.jpg" alt="" class="f-img">
+                            </a>
+                            <div class="cnt f-tc">
+                              <h3 class="f-thide2">
+                               
+                                <a href="#" target="_blank">铁三角 ATH-S200BT 头戴式无线蓝牙耳机耳麦</a>
+                              </h3>
+                              <p class="txt f-thide">
+                                ￥<em>578</em>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li data-action="bircd" data-inndex="2">
+                          <div>
+                            <a href="#" class="cover f-pr f-blk j-statistics">
+                              <img src="img/shop/index/19.jpg" alt="" class="f-img">
+                              
+                            </a>
+                            <div class="cnt f-tc">
+                              <h3 class="f-thide2">
+                                  <span class="tag tag-red">
+                                      <em>热门</em>
+                                  </span>
+                                <a href="#" target="_blank">爱国者(aigo)MP3播放器105 HIFI音乐播放器无损发烧级便携8G可扩容</a>
+                              </h3>
+                              <p class="txt f-thide">
+                                ￥<em>499</em>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li data-action="bircd" data-inndex="3">
+                          <div>
+                            <a href="#" class="cover f-pr f-blk j-statistics">
+                              <img src="img/shop/index/20.jpg" alt="" class="f-img">
+                            </a>
+                            <div class="cnt f-tc">
+                              <h3 class="f-thide2">
+                                
+                                <a href="#" target="_blank">爱国者(aigo)播放器M1无损hifi音乐播放器触屏MP3学生随身听便携播放器</a>
+                              </h3>
+                              <p class="txt f-thide">
+                                ￥<em>269</em>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li data-action="bircd" data-inndex="4">
+                            <div>
+                              <a href="#" class="cover f-pr f-blk j-statistics">
+                                <img src="img/shop/index/21.jpg" alt="" class="f-img">
+                              </a>
+                              <div class="cnt f-tc">
+                                <h3 class="f-thide2">
+                                  <span class="tag tag-red">
+                                    <em>热门</em>
+                                  </span>
+                                  <a href="#" target="_blank">铁三角 CK330IS 手机专用带麦通话入耳式耳机</a>
+                                  </h3>
+                                <p class="txt f-thide">
+                                  ￥<em>189</em>
+                                </p>
+                              </div>
+                            </div>
+                        </li>
+                        
+                        <li data-action="bircd" data-inndex="6">
+                            <div>
+                              <a href="#" class="cover f-pr f-blk j-statistics">
+                                <img src="img/shop/index/22.jpg" alt="" class="f-img">
+                              </a>
+                              <div class="cnt f-tc">
+                                <h3 class="f-thide2">
+                                  
+                                  <a href="#" target="_blank">漫步者(EDIFIER) BIG BUN 立体声蓝牙便携音箱</a>
+                                </h3>
+                                <p class="txt f-thide">
+                                  ￥<em>399</em>
+                                </p>
+                              </div>
+                            </div>
+                      </li>
+
+                        <li data-action="bircd" data-inndex="6">
+                              <div>
+                                <a href="#" class="cover f-pr f-blk j-statistics">
+                                  <img src="img/shop/index/23.jpg" alt="" class="f-img">
+                                </a>
+                                <div class="cnt f-tc">
+                                  <h3 class="f-thide2">
+                                    <span class="tag tag-red">
+                                      <em>热门</em>
+                                    </span>
+                                    <a href="#" target="_blank">Beats Solo3 Wireless 无线蓝牙头戴式耳机 带麦可通话 内置A跑偏了W1 芯片</a>
+                                  </h3>
+                                  <p class="txt f-thide">
+                                    ￥<em>2209</em>
+                                  </p>
+                                </div>
+                              </div>
+                        </li>
+                        <li data-action="bircd" data-inndex="7">
+                              <div>
+                                <a href="#" class="cover f-pr f-blk j-statistics">
+                                  <img src="img/shop/index/24.jpg" alt="" class="f-img">
+                                  <span class="spec f-pa">
+                                      <span class="origin f-pa">￥249</span>
+                                      <span class="cut f-pa">
+                                        <del>￥299</del>
+                                      </span>
+                                    </span>
+                                </a>
+                                <div class="cnt f-tc">
+                                  <h3 class="f-thide2">
+                                      <span class="tag tag-red">
+                                          <em>特价</em>
+                                        </span>
+                                    <a href="#" target="_blank">击音(iGene)Super HD【全触摸】进口HIFI降噪无线有线双模蓝牙头戴式耳机</a>
+                                  </h3>
+                                  <p class="txt f-thide">
+                                    ￥<em>249</em>
+                                  </p>
+                                </div>
+                              </div>
+                        </li>   
+                </ul>
+              </div>
+              </div> 
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/shop/bootstrap-min.js"></script>
+  <script src="js/shop/header.js"></script>
+  <script src="js/shop/index.js"></script>
+  </body>
+</html>

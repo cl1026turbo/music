@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="music.ico" type="img/x-icon" />
+    <link rel="stylesheet" href="css/playlistl.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <div class="header_bg" id="header_bg">
+	<div id="header" class="header">
+		<div class="logo">
+			<a href="javaScript:;">网易云音乐</a>
+		</div>
+		<ul class="first_nav">
+			<li class="active"><a href="index.html">发现音乐</a></li>
+			<li><a href="javascript:;">我的音乐</a></li>
+			<li><a href="javascript:;">朋友</a></li>
+			<li><a href="shop_index.html">商城</a></li>
+			<li><a href="musicer.html">音乐人</a></li>
+			<li><a href="javascript:;">下载客户端</a></li>
+		</ul>
+		<div class="search">
+			<div>
+				<input type="text" placeholder="音乐/电台/用户">
+			</div>
+			
+		</div>
+		<div class="videoUp">
+			<div>
+				<a href="javascript:;">创作中心</a>
+			</div>
+		</div>
+		<div class="login">
+			<a href="#" data-action='login'>登录</a>
+			<i class="arr"></i>
+			<ul>
+				<li><i class='mb_icon'></i><a href="javascript:;">手机号登录</a></li>
+				<li><i class="wx_icon"></i><a href="javascript:;">微信登录</a></li>
+				<li><i class="qq_icon"></i><a href="javascript:;">QQ登录</a></li>
+				<li><i class="wb_icon"></i><a href="javascript:;">新浪微博登录</a></li>
+				<li><i class="wy_icon"></i><a href="javascript:;">网易邮箱账号登录</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="nav_bg">
+	<div id="nav" class="nav">
+			<ul>
+				<li><a href="index.html" class="navActive">推荐</a></li>
+				<li><a href="playlist.html">歌单</a></li>
+				<li><a href="#">排行榜</a></li>
+				<li><a href="#">主播电台</a></li>
+				<li><a href="#">歌手</a></li>
+				<li><a href="#">新碟上架</a></li>
+			</ul>
+	</div>
+</div>
+    <div class="container">
+        <!--上部分-->
+        <div class="left">
+            <div class="top">
+                    <!--左侧图片-->
+                        <img src="img/playlist/01.png" class="playlist-image">
+                    <div class="top-right">
+                        <!--右侧歌单-->
+                        <div class="playlist-title">
+                            <img src="img/playlist/po.png" class="image">
+                            <h2>苏打绿+五月天|一只喜欢寂寞，一只终结孤单</h2>
+                        </div>
+                        <!--右侧创建人-->
+                        <div class="playlist-creater">
+                            <div class="face">
+                                    <img src="img/playlist/1.jpg" alt="">
+                            </div>
+                            <span class="name">
+                                <a href="javascript:;" class="name1">大圆老陈</a>
+                            </span>
+                            <span class="time">2018-10-27&nbsp;创建</span>
+                        </div>
+                        <!--右侧播放收藏等-->
+                        <div class="playlist-radio">
+                                <div class="r1">
+                                    <a href="#">
+                                        <img src="img/playlist/bofang.png" class="radio">
+                                        <span class="word">播放</span>  
+                                    </a>
+                                </div>
+                                <div class="r2">
+                                    <a href="#">
+                                        <span class="add">+</span>
+                                    </a>
+                                </div>
+                                <div class="r3">
+                                    <a href="#">
+                                        <img src="img/playlist/weibiaoti--.png" class="other">
+                                        <span class="ow">(14万)</span>  
+                                    </a>
+                                </div>
+                                <div class="r4">
+                                    <a href="#">
+                                        <img src="img/playlist/fenxiang.png" class="other1">
+                                        <span class="ow1">(1076)</span>  
+                                    </a>
+                                </div>
+                                <div class="r5">
+                                    <a href="#">
+                                        <img src="img/playlist/xiazai.png" class="other2">
+                                        <span class="ow2">下载</span>  
+                                    </a>
+                                </div>
+                                <div class="r6">
+                                    <a href="#">
+                                        <img src="img/playlist/xiaoxi.png" class="other3">
+                                        <span class="ow3">(551)</span>  
+                                    </a>
+                                </div>
+                        </div>
+                        <!--右侧歌单标签-->
+                        <div class="playlist-label">
+                            <b class="n">标签:</b>
+                            <div class="label1">华语</div>
+                            <div class="label2">流行</div>
+                            <div class="label3">治愈</div>
+                        </div>
+                        <!--右侧歌单介绍-->
+                        <div class="playlist-intr">
+                            <b class="n">介绍：</b> 
+                            <ul>
+                                <li>“一只是绿色的梦境，一只是蓝色的狂想</li>
+                                <li>一只喜欢寂寞，一只终结孤单。</li>
+                                <li>一只用小情歌赞颂无与伦比的美丽，</li>
+                                <li>一只用笑忘歌谱写后青春期的诗。</li>
+                                <li>一只在小宇宙里用呢喃的频率描写空气中的视听与幻觉，</li>
+                                <li>一只在疯狂世界里用温柔的倔强坚守我心中尚未崩坏的地方。</li>
+                                <li>五月天是蓝色的，张扬激荡。</li>
+                                <li>苏打绿是绿色的，清新纯粹。</li>
+                                <li>五月天让你抬头看看天上的梦想和未来。</li>
+                                <li>苏打绿让你低头欣赏路上的荆棘和花朵。”</li>      
+                            </ul>
+                            <div class="open" data-toggle="brandlist">收起︿</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-name">
+                    <span class="m-name">歌曲列表</span>
+                    <span class="s-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10首歌</span>   
+                </div>
+                <div class="m-content">
+                    <table>
+                        <tr class="biaotou">
+                            <td>编号</td>
+                            <td>歌曲标题</td>
+                            <td>时长</td>
+                            <td>歌手</td>
+                            <td>专辑</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>喜欢寂寞</td>
+                            <td>04:24</td>
+                            <td>苏打绿</td>
+                            <td>你在烦恼什么</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>小情歌</td>
+                            <td>04:33</td>
+                            <td>苏打绿</td>
+                            <td>小宇宙</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>无与伦比的美丽</td>
+                            <td>05:06</td>
+                            <td>苏打绿</td>
+                            <td>无与伦比的美丽</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>在遇见</td>
+                            <td>04:33</td>
+                            <td>苏打绿</td>
+                            <td>秋.故事</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>他下了夏天</td>
+                            <td>05:20</td>
+                            <td>苏打绿</td>
+                            <td>夏/故事</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>温柔</td>
+                            <td>04:40</td>
+                            <td>五月天</td>
+                            <td>我们是五月天</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>听不到</td>
+                            <td>05:00</td>
+                            <td>五月天</td>
+                            <td>听不到</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>倔强</td>
+                            <td>04:21</td>
+                            <td>五月天</td>
+                            <td>神的孩子都在跳舞</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>时光机</td>
+                            <td>03:42</td>
+                            <td>五月天</td>
+                            <td>时光机</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>纯真</td>
+                            <td>04:15</td>
+                            <td>五月天</td>
+                            <td>人生海海</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pinglun">
+                    <span class="m-name">评论</span>
+                    <span class="s-name">&nbsp;&nbsp;共554条评论</span>
+                </div>
+                <div class="z-content">
+                    <div class="pl-content">
+                        <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                        <div class="pl-content1">
+                            <div class="pl-content2">
+                                <a href="#">陌离fighting:</a>
+                                <span>
+                                    五月天和苏打绿陪我熬过这段灰暗的日子
+                                </span>
+                            </div>
+                            <div class="pl-content3">
+                                <span>
+                                    7月11日 11:09
+                                </span>
+                            </div>
+                            <div class="pl-content4">
+                                <img src="img/playlist/zan.png" alt="" class="zan">
+                                <a id="zan">(0)</a>
+                                <span>| 回复</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-content">
+                            <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                            <div class="pl-content1">
+                                <div class="pl-content2">
+                                    <a href="#">陌离fighting:</a>
+                                    <span>
+                                        五月天和苏打绿陪我熬过这段灰暗的日子
+                                    </span>
+                                </div>
+                                <div class="pl-content3">
+                                    <span>
+                                        7月11日 11:09
+                                    </span>
+                                </div>
+                                <div class="pl-content4">
+                                    <img src="img/playlist/zan.png" alt="" class="zan">
+                                    <a id="zan">(0)</a>
+                                    <span>| 回复</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="pl-content">
+                            <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                            <div class="pl-content1">
+                                <div class="pl-content2">
+                                    <a href="#">陌离fighting:</a>
+                                    <span>
+                                        五月天和苏打绿陪我熬过这段灰暗的日子
+                                    </span>
+                                </div>
+                                <div class="pl-content3">
+                                    <span>
+                                        7月11日 11:09
+                                    </span>
+                                </div>
+                                <div class="pl-content4">
+                                    <img src="img/playlist/zan.png" alt="" class="zan">
+                                    <a id="zan">(0)</a>
+                                    <span>| 回复</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="pl-content">
+                            <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                            <div class="pl-content1">
+                                <div class="pl-content2">
+                                    <a href="#">陌离fighting:</a>
+                                    <span>
+                                        五月天和苏打绿陪我熬过这段灰暗的日子
+                                    </span>
+                                </div>
+                                <div class="pl-content3">
+                                    <span>
+                                        7月11日 11:09
+                                    </span>
+                                </div>
+                                <div class="pl-content4">
+                                    <img src="img/playlist/zan.png" alt="" class="zan">
+                                    <a id="zan">(0)</a>
+                                    <span>| 回复</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="pl-content">
+                        <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                        <div class="pl-content1">
+                            <div class="pl-content2">
+                                <a href="#">陌离fighting:</a>
+                                <span>
+                                    五月天和苏打绿陪我熬过这段灰暗的日子
+                                </span>
+                            </div>
+                            <div class="pl-content3">
+                                <span>
+                                    7月11日 11:09
+                                </span>
+                            </div>
+                            <div class="pl-content4">
+                                <img src="img/playlist/zan.png" alt=""  class="zan">
+                                <a id="zan">(0)</a>
+                                <span>| 回复</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div> 
+        <div class="right">
+                <h5>喜欢这个歌单的人</h5>
+            <div class="r-top">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+                <img src="img/playlist/1.jpg" alt="">
+            </div>
+            <h5>热门歌单</h5>
+            <div class="r-middle">
+                <div class="pri-list">
+                    <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                    <div class="pri-detail">
+                        <div class="pri-title">
+                            四方食事,不过一碗人间烟火
+                        </div>
+                        <div class="pri-use">
+                           by 迟到情书
+                        </div>
+                    </div>
+                </div>
+                <div class="pri-list">
+                    <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                    <div class="pri-detail">
+                        <div class="pri-title">
+                            四方食事,不过一碗人间烟火
+                        </div>
+                        <div class="pri-use">
+                            by 迟到情书
+                        </div>
+                    </div>
+                </div>
+                <div class="pri-list">
+                    <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                    <div class="pri-detail">
+                        <div class="pri-title">
+                            四方食事,不过一碗人间烟火
+                        </div>
+                        <div class="pri-use">
+                            by 迟到情书
+                        </div>
+                    </div>
+                    </div>
+                <div class="pri-list">
+                    <img src="img/playlist/2.jpg" alt="" class="pri-image">
+                    <div class="pri-detail">
+                        <div class="pri-title">
+                            四方食事,不过一碗人间烟火
+                        </div>
+                        <div class="pri-use">
+                            by 迟到情书
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/playlistl.js"></script>
+</body>
+</html>
+

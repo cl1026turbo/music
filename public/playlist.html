@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<div>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/playlist/base.css">
+    <link rel="stylesheet" href="css/playlist/header.css">
+    <link rel="stylesheet" href="css/playlist/footer.css">
+    <link rel="stylesheet" href="css/playlist/background.css">
+    <link rel="stylesheet" href="css/playlist/playlist.css">
+    <link rel="stylesheet" href="css/playlist/login_modal.css">
+</head>
+<body>
+<div class="header_bg" id="header_bg">
+    <div id="header" class="header">
+        <div class="logo">
+            <a href="javaScript:;">网易云音乐</a>
+        </div>
+        <ul class="first_nav">
+            <li class="active">发现音乐</li>
+            <li>我的音乐</li>
+            <li>朋友</li>
+            <li>商城</li>
+            <li>音乐人</li>
+            <li>下载客户端</li>
+        </ul>
+        <div class="search">
+            <div>
+                <input type="text" placeholder="音乐/电台/用户"/>
+            </div>
+        </div>
+        <div class="videoUp">
+            <div>
+                <a href="javascript:;">创作中心</a>
+            </div>
+        </div>
+        <div class="login nologin">
+            <a href="#" data-action="login">登录</a>
+            <i class="arr"></i>
+            <ul>
+                <li><i class="mb_icon"></i><a href="javascript:;">手机号登录</a></li>
+                <li><i class="wx_icon"></i><a href="javascript:;">微信登录</a></li>
+                <li><i class="qq_icon"></i><a href="javascript:;">QQ登录</a></li>
+                <li><i class="wb_icon"></i><a href="javascript:;">新浪微博登录</a></li>
+                <li><i class="wy_icon"></i><a href="javascript:;">网易邮箱账号登录</a></li>
+            </ul>
+        </div>
+        <div class="login islogin" style="display: none;">
+            <a href="http://www.codeboy.com/pro/zhx/project/playlist.html#" data-action="login">
+                <img src="./网易歌单_files/153931627905286.jpg" class="avatar">
+            </a>
+            <i class="arr"></i>
+            <ul>
+                <li><i class="hm_icon"></i><a href="javascript:;">我的主页</a></li>
+                <li><i class="msg_icon"></i><a href="javascript:;">我的消息</a></li>
+                <li><i class="lv_icon"></i><a href="javascript:;">我的等级</a></li>
+                <li><i class="mbr_icon"></i><a href="javascript:;">VIP会员</a></li>
+                <li><i class="st_icon"></i><a href="javascript:;">个人设置</a></li>
+                <li><i class="ex_icon"></i><a href="javascript:;" data-action="logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div
+    <div class="login_modal"></div>
+</div>
+<div class="nav_bg" id="nav_bg">
+    <div id="nav" class="nav">
+        <ul>
+            <li><a href="index.html">推荐</a></li>
+            <li><a href="playlist.html" class="active">歌单</a></li>
+            <li><a href="#">排行榜</a></li>
+            <li><a href="#">主播电台</a></li>
+            <li><a href="#">歌手</a></li>
+            <li><a href="#">新碟上架</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="border-floor m-3">
+        <h3><span class="title_font">全部</span>
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">选择分类</button>
+                <div class="dropdown-menu">
+                    <div class="row">
+                        <div class="col-12 text-left border-bottom"><a href="#" class="border w-25">全部风格</a></div>
+                        <div class="row col-12 border-bottom">
+                            <div class="col-3 text-center my_small font-weight-bold border-right">语种</div>
+                            <div class="col-9 p-0">
+                                <ul class="breadcrumb my_small">
+                                    <li class="breadcrumb-item">华语</li>
+                                    <li class="breadcrumb-item">欧美</li>
+                                    <li class="breadcrumb-item">日语</li>
+                                    <li class="breadcrumb-item">韩语</li>
+                                    <li class="breadcrumb-item">粤语</li>
+                                    <li class="breadcrumb-item">小语种</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row col-12 border-bottom">
+                            <div class="col-3 text-center my_small font-weight-bold border-right">风格</div>
+                            <div class="col-9 p-0">
+                                <ul class="breadcrumb my_small">
+                                    <li class="breadcrumb-item">流行</li>
+                                    <li class="breadcrumb-item">摇滚</li>
+                                    <li class="breadcrumb-item">民谣</li>
+                                    <li class="breadcrumb-item">电子</li>
+                                    <li class="breadcrumb-item">说唱</li>
+                                    <li class="breadcrumb-item">轻音乐</li>
+                                    <li class="breadcrumb-item">爵士</li>
+                                    <li class="breadcrumb-item"> R&B/Soul</li>
+                                    <li class="breadcrumb-item">蓝调</li>
+                                    <li class="breadcrumb-item">英伦</li>
+                                    <li class="breadcrumb-item">朋克</li>
+                                    <li class="breadcrumb-item">后摇</li>
+                                    <li class="breadcrumb-item">金属</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row col-12 border-bottom">
+                            <div class="col-3 text-center my_small font-weight-bold border-right">场景</div>
+                            <div class="col-9 p-0">
+                                <ul class="breadcrumb my_small">
+                                    <li class="breadcrumb-item">清晨</li>
+                                    <li class="breadcrumb-item">夜晚</li>
+                                    <li class="breadcrumb-item">学习</li>
+                                    <li class="breadcrumb-item">工作</li>
+                                    <li class="breadcrumb-item">午休</li>
+                                    <li class="breadcrumb-item">下午茶</li>
+                                    <li class="breadcrumb-item">地铁</li>
+                                    <li class="breadcrumb-item">运动</li>
+                                    <li class="breadcrumb-item">驾车</li>
+                                    <li class="breadcrumb-item">旅行</li>
+                                    <li class="breadcrumb-item">散步</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row col-12 border-bottom">
+                            <div class="col-3 text-center my_small font-weight-bold border-right">情感</div>
+                            <div class="col-9 p-0">
+                                <ul class="breadcrumb my_small">
+                                    <li class="breadcrumb-item">怀旧</li>
+                                    <li class="breadcrumb-item">清新</li>
+                                    <li class="breadcrumb-item">浪漫</li>
+                                    <li class="breadcrumb-item">性感</li>
+                                    <li class="breadcrumb-item">伤感</li>
+                                    <li class="breadcrumb-item">治愈</li>
+                                    <li class="breadcrumb-item">放松</li>
+                                    <li class="breadcrumb-item">孤独</li>
+                                    <li class="breadcrumb-item">感动</li>
+                                    <li class="breadcrumb-item">兴奋</li>
+                                    <li class="breadcrumb-item">思念</li>
+                                    <li class="breadcrumb-item">安静</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row col-12 border-bottom">
+                            <div class="col-3 text-center my_small font-weight-bold border-right">主题</div>
+                            <div class="col-9 p-0">
+                                <ul class="breadcrumb my_small">
+                                    <li class="breadcrumb-item">影视原声</li>
+                                    <li class="breadcrumb-item">ACG</li>
+                                    <li class="breadcrumb-item">儿童</li>
+                                    <li class="breadcrumb-item">校园</li>
+                                    <li class="breadcrumb-item">游戏</li>
+                                    <li class="breadcrumb-item">70后</li>
+                                    <li class="breadcrumb-item">KTV</li>
+                                    <li class="breadcrumb-item">网络歌曲</li>
+                                    <li class="breadcrumb-item">经典</li>
+                                    <li class="breadcrumb-item">吉他</li>
+                                    <li class="breadcrumb-item">翻唱</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </h3>
+    </div>
+    <div class="playlist_cont">
+        <ul class="wrapper"><li data-pid="1" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/1.png">
+            <div class="text_container">
+                <p class="pl_intro" title="摄氏27°·百变女声 述说温柔">摄氏27°·百变女声 述说温柔</p>
+                <p class="pl_amo">播放量
+                    <span>99.1</span>万</p>
+            </div>
+        </li><li data-pid="2" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/2.png">
+            <div class="text_container">
+                <p class="pl_intro" title="偷偷丧一会可以吗">偷偷丧一会可以吗</p>
+                <p class="pl_amo">播放量
+                    <span>242.8</span>万</p>
+            </div>
+        </li><li data-pid="3" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/3.png">
+            <div class="text_container">
+                <p class="pl_intro" title="「韩」在我的歌单里甜成少女漫">「韩」在我的歌单里甜成少女漫</p>
+                <p class="pl_amo">播放量
+                    <span>129</span>万</p>
+            </div>
+        </li><li data-pid="4" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/4.png">
+            <div class="text_container">
+                <p class="pl_intro" title="刷题必备，学习歌单">刷题必备，学习歌单</p>
+                <p class="pl_amo">播放量
+                    <span>210.8</span>万</p>
+            </div>
+        </li><li data-pid="5" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/5.png">
+            <div class="text_container">
+                <p class="pl_intro" title="致青春：校服是我和你唯一穿过的“情侣装”">致青春：校服是我和你唯一穿过的“情侣装”</p>
+                <p class="pl_amo">播放量
+                    <span>156.1</span>万</p>
+            </div>
+        </li><li data-pid="6" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/6.png">
+            <div class="text_container">
+                <p class="pl_intro" title="烟嗓民谣：醉放于呢喃细语之中">烟嗓民谣：醉放于呢喃细语之中</p>
+                <p class="pl_amo">播放量
+                    <span>149.1</span>万</p>
+            </div>
+        </li><li data-pid="7" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/7.png">
+            <div class="text_container">
+                <p class="pl_intro" title="无所求必满载而归">无所求必满载而归</p>
+                <p class="pl_amo">播放量
+                    <span>98.6</span>万</p>
+            </div>
+        </li><li data-pid="8" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/8.png">
+            <div class="text_container">
+                <p class="pl_intro" title="=》晚安曲《= ⠀月亮今晚盖上了软fufu的棉被">=》晚安曲《= ⠀月亮今晚盖上了软fufu的棉被</p>
+                <p class="pl_amo">播放量
+                    <span>156.1</span>万</p>
+            </div>
+        </li><li data-pid="9" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/9.png">
+            <div class="text_container">
+                <p class="pl_intro" title="无关物质，无关理想，只要有一颗自由的心">无关物质，无关理想，只要有一颗自由的心</p>
+                <p class="pl_amo">播放量
+                    <span>156.1</span>万</p>
+            </div>
+        </li><li data-pid="10" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/10.png">
+            <div class="text_container">
+                <p class="pl_intro" title="用一首歌，讲珍惜眼前人的故事">用一首歌，讲珍惜眼前人的故事</p>
+                <p class="pl_amo">播放量
+                    <span>1199</span>万</p>
+            </div>
+        </li><li data-pid="11" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/11.png">
+            <div class="text_container">
+                <p class="pl_intro" title="迷死人的前奏 百听不厌的前十秒">迷死人的前奏 百听不厌的前十秒</p>
+                <p class="pl_amo">播放量
+                    <span>156.1</span>万</p>
+            </div>
+        </li><li data-pid="12" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/12.png">
+            <div class="text_container">
+                <p class="pl_intro" title="大家绝对不要有一点点不开心鸭">大家绝对不要有一点点不开心鸭</p>
+                <p class="pl_amo">播放量
+                    <span>156.1</span>万</p>
+            </div>
+        </li><li data-pid="13" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/13.png">
+            <div class="text_container">
+                <p class="pl_intro" title="夜是灯火不休 也是思念你至极的时候">夜是灯火不休 也是思念你至极的时候</p>
+                <p class="pl_amo">播放量
+                    <span>156.1</span>万</p>
+            </div>
+        </li><li data-pid="14" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/14.png">
+            <div class="text_container">
+                <p class="pl_intro" title="你是我自罚三杯也不肯开口的秘密">你是我自罚三杯也不肯开口的秘密</p>
+                <p class="pl_amo">播放量
+                    <span>68.5</span>万</p>
+            </div>
+        </li><li data-pid="15" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/15.png">
+            <div class="text_container">
+                <p class="pl_intro" title="MJ 比伯 断眉 戳爷 黄老板 萌德 霉霉 骚姆
+">MJ 比伯 断眉 戳爷 黄老板 萌德 霉霉 骚姆
+                </p>
+                <p class="pl_amo">播放量
+                    <span>2210.5</span>万</p>
+            </div>
+        </li><li data-pid="16" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/16.png">
+            <div class="text_container">
+                <p class="pl_intro" title="六级呀">六级呀</p>
+                <p class="pl_amo">播放量
+                    <span>147.5</span>万</p>
+            </div>
+        </li><li data-pid="17" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/17.png">
+            <div class="text_container">
+                <p class="pl_intro" title="天气这么好 你为何老跑到我心里来">天气这么好 你为何老跑到我心里来</p>
+                <p class="pl_amo">播放量
+                    <span>203.5</span>万</p>
+            </div>
+        </li><li data-pid="18" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/18.png">
+            <div class="text_container">
+                <p class="pl_intro" title="雷雨/微雨/暴雨/夜雨/雨滴/小雨声">雷雨/微雨/暴雨/夜雨/雨滴/小雨声</p>
+                <p class="pl_amo">播放量
+                    <span>78</span>万</p>
+            </div>
+        </li><li data-pid="19" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/19.png">
+            <div class="text_container">
+                <p class="pl_intro" title="【复习 论文 码字 代码 刷题】静心音乐大全">【复习 论文 码字 代码 刷题】静心音乐大全</p>
+                <p class="pl_amo">播放量
+                    <span>156.1</span>万</p>
+            </div>
+        </li><li data-pid="20" class="ani_load">
+            <div class="play_btn"></div>
+            <img src="img/playlist/20.png">
+            <div class="text_container">
+                <p class="pl_intro" title="「背单词专用」老铁考研加油">「背单词专用」老铁考研加油</p>
+                <p class="pl_amo">播放量
+                    <span>198.5</span>万</p>
+            </div>
+        </li></ul>
+    </div>
+    <div class="pagination clear">
+        <ul class="clear">
+            <li class="disabled"><a href="#">上一页</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="disabled"><a href="#">下一页</a></li>
+        </ul>
+    </div>
+</div>
+<div class="footer_bg" id="footer_bg"><div id="footer" class="footer">
+    <ul class="footer_info">
+        <li class="download">
+            <h3>下载网易云音乐客户端</h3>
+            <ul class="download_list">
+                <li class="dl_item">
+                    <i class="icon_pc"></i>
+                    <p><a href="">PC版</a></p>
+                </li>
+                <li class="dl_item">
+                    <i class="icon_mac"></i>
+                    <p><a href="">Mac版</a></p>
+                </li>
+                <li class="dl_item">
+                    <i class="icon_andr"></i>
+                    <p><a href="">Android版</a></p>
+                </li>
+                <li class="dl_item">
+                    <i class="icon_iph"></i>
+                    <p><a href="">iPhone版</a></p>
+                </li>
+            </ul>
+        </li>
+        <li class="products">
+            <h3>特色产品</h3>
+            <ul class="products_list">
+                <li class="prod_item">
+                    <i class="icon_k"></i>
+                    <p><a href="">天天k歌</a></p>
+                </li>
+                <li class="prod_item">
+                    <i class="icon_sp"></i>
+                    <p><a href="">SUPER SOUND</a></p>
+                </li>
+                <li class="prod_item">
+                    <i class="icon_qPlay"></i>
+                    <p><a href="">Qplay</a></p>
+                </li>
+                <li class="prod_item">
+                    <p><a href="">车载互联</a></p>
+                </li>
+                <li class="prod_item">
+                    <p><a href="">网易演唱会</a></p>
+                </li>
+            </ul>
+        </li>
+        <li class="links">
+            <h3>合作链接</h3>
+            <ul class="links_list">
+                <li class="lk_item">
+                    <a href="">CJ E&amp;M</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">网易视频</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">手机空间</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">阴阳师</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">网页社交广告</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">电脑管家</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">网易浏览器</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">炉石传说</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">网易云</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">初音速</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">风暴英雄</a>
+                </li>
+                <li class="lk_item">
+                    <a href="">守望先锋</a>
+                </li>
+            </ul>
+
+        </li>
+        <li class="platform">
+            <h3>开放平台</h3>
+            <ul class="plats_list">
+                <li class="plat_item">
+                    <p>
+                        <a href="">独立音乐人</a>
+                    </p>
+                </li>
+                <li class="plat_item">
+                    <p>
+                        <a href="">音乐专栏</a>
+                    </p>
+                </li>
+                <li class="plat_item">
+                    <p>
+                        <a href="">上传视频</a>
+                    </p>
+                </li>
+                <li class="plat_item">
+                    <p>
+                        <a href="">上传音频</a>
+                    </p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="copyright">
+        <p>
+            <a href="javascript:;" title="关于网易">关于网易</a> |
+            <a href="javascript:;" title="About Netease">About Netease</a> |
+            <a href="javascript:;" title="服务条款">服务条款</a> |
+            <a href="javascript:;" title="用户服务协议">用户服务协议</a> |
+            <a href="javascript:;" title="隐私政策">隐私政策</a> |
+            <a href="javascript:;" title="权利声明">权利声明</a> |
+            <a href="javascript:;" title="广告服务 ">广告服务</a> |
+            <a href="javascript:;" title="网易招聘 ">网易招聘</a> |
+            <a href="javascript:;" title="客服中心 ">客服中心</a> |
+            <a href="javascript:;" title="网站导航 ">网站导航</a>
+        </p>
+        <p>
+            Copyright © 1997 -2018 Netease.
+            <a href="javascript:;" title="All Rights Reserved.">All Rights Reserved.</a>
+        </p>
+        <p>
+            网易公司
+            <a href="javascript:;" title="版权所有">版权所有</a>
+            <a href="javascript:;" title="网易网络文化经营许可证">网易网络文化经营许可证</a>
+        </p>
+    </div>
+  </div></div>
+</body>
+</html>

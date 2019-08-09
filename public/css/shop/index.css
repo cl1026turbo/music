@@ -1,0 +1,397 @@
+*{margin:0; padding:0;}
+    #main{
+      width:100%;
+      margin:0 auto;
+    }
+    /*导航条*/
+    #banner{
+      width:1100px;
+      overflow:hidden;
+      position:relative;
+      margin:0 auto;
+    }
+    #ul-imgs{
+      list-style:none;
+    }
+    #ul-imgs.transition{
+      transition:all .5s linear;
+    }
+    #ul-imgs>li{
+      width:1100px;
+      float:left;
+    }
+    #ul-imgs img{
+      width:1100px;
+    }
+    #ul-idxs{
+      width:100px;
+      margin:0 auto;
+      list-style:none;
+      position:absolute;
+      bottom:25px;
+      left:50%;
+      margin-left:-50px;
+    }
+    #ul-idxs>li{
+      float:left;
+      width:10px; height:10px;
+      background-color:#fff;
+      border-radius:5px;
+      margin:0 5px;
+      cursor:pointer;
+    }
+    #ul-idxs>li.active{
+      background-color:#c20c0c;
+    }
+    #btn-left,#btn-right{
+      width:60px;
+      height:100%;
+      position:absolute;
+      top:0;
+      background-repeat:no-repeat;
+      background-position:center;
+      cursor:pointer;
+    }
+    #btn-left{
+      left:20px;
+      background-image:url(image/carousel_item/left_ar.png);
+    }
+    #btn-right{
+      right:20px;
+      background-image:url(image/carousel_item/right_ar.png);
+    }
+    #btn-left:hover,#btn-right:hover{
+      background-size:40px 70px
+    }
+
+
+.g-tab {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.hometab {
+  width: 1100px;
+  margin: 0 auto;
+}
+.f-tc {
+  text-align: center;
+}
+.hometab ul {
+  width: 100%;
+  height: 80px;
+}
+.hometab ul .tab {
+  float: left;
+  width: 275px;
+  height: 80px;
+}
+li{
+  list-style:none;
+}
+.hometab ul li img {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: top;
+  padding-top: 16px;
+}
+.hometab ul li a {
+  float: left;
+  width: 250px;
+  padding: 0 6px;
+  height: 80px;
+  text-align: center;
+  font-size: 0;
+}
+.hometab .tab span {
+  display: inline-block;
+  max-width: 190px;
+  height: 80px;
+  padding-left: 12px;
+  line-height: 80px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+.hometab .line {
+  display: inline-block;
+  height: 48px;
+  width: 1px;
+  margin: 16px 0 16px 0;
+  background-color: #000000;
+  filter: alpha(opacity=10);
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+}
+
+
+.g-bd-home {
+  padding-bottom: 160px;
+}
+.g-bd {
+  width: 1100px;
+  min-height: 750px;
+  margin: 0 auto;
+  background: #fff;
+}
+.g-bd .ma {
+  width: 100%;
+  margin: 0;
+}
+.subjs {
+  width: 100%;
+  margin-top: 40px;
+}
+.pad-right {
+  padding-right: 16px;
+}
+.subj {
+  float: left;
+  width: 542px;
+  height: 300px;
+}
+.subj img {
+  width: 100%;
+  height: 100%;
+}
+/*编辑推荐部分*/
+.m-block{
+  margin-top:50px;
+}
+.m-block {
+  width: 100%;
+  height: auto;
+  margin-top: 66px;
+}
+.m-block .mid-bold {
+  font-weight: bold;
+}
+
+.m-block .mid-txt {
+  font-size: 24px;
+  color: #333;
+}
+
+
+.m-product .list {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+.m-product .list li {
+  float: left;
+  position: relative;
+  width: 263px;
+  height: 382px;
+  padding-right: 12px;
+}
+.f-cb:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.m-product .cover {
+  width: 263px;
+  height: 263px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.f-pr {
+  position: relative;
+  zoom: 1;
+}
+.f-img{
+  display:block;
+}
+.m-product .cover img {
+  width: 263px;
+  height: 263px;
+}
+.m-product .cover .spec {
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 10px;
+  background-color: #d33a31;
+  border-radius: 50%;
+  color: #fff;
+}
+.f-pa {
+  position: absolute;
+}
+.m-product .cover .spec .origin {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+.m-product .cover .spec .cut {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.7;
+}
+.m-product .cnt {
+  margin-top: 10px;
+}
+.f-tc {
+  text-align: center;
+}
+.m-product .tag-red {
+  border: 1px solid #d74d45;
+}
+.m-product .tag {
+  overflow: hidden;
+  box-sizing: border-box;
+  line-height: 20px;
+  padding: 0 3px;
+  border-radius: 1px;
+  color: #d74d45;
+  font-size: 12px;
+}
+em, i {
+  font-style: normal;
+  text-align: left;
+  font-size: inherit;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+#main a:hover{
+  transform: translateY(-6px);
+
+}
+.f-blk, .f-img, .f-link{
+  display:block;
+}
+user agent stylesheeta:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.m-product .cnt h3 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #333;
+}
+.m-product .cnt .txt {
+  font-size: 16px;
+  color: #d33a31;
+}
+.m-product .cnt p {
+  padding-top: 4px;
+}
+.f-thide {
+  word-wrap: normal;
+}
+.f-thide, .f-thide2, .f-thide3, .f-thide4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.f-thide {
+  white-space: nowrap;
+}
+
+/*数字专辑部分*/
+
+
+
+.digalb {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.f-mgt10 {
+  margin-top: 10px;
+}
+.digalb .cnt {
+  width: 700px;
+  margin: 0 20px 0 60px;
+}
+.digalb .inner {
+  height: 180px;
+}
+.digalb .inner span {
+  display: block;
+  padding-top: 28px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+}
+.digalb .inner span i {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/shop/index/5.png) no-repeat;
+}
+em, i {
+  font-style: normal;
+  text-align: left;
+  font-size: inherit;
+}
+.digalb .inner p {
+  position: relative;
+  margin-top: 9px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.digalb .inner a {
+  display: block;
+  margin-top: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+.digalb .covers {
+  top: 30px;
+  right: 50px;
+  width: 210px;
+  height: 120px;
+}
+.f-pa {
+  position: absolute;
+}
+.digalb .sml {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+.digalb .big {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 60px;
+  width: 120px;
+  height: 120px;
+}
+.digalb .circle {
+  position: absolute;
+  top: 0;
+  left: 175px;
+  width: 35px;
+  height: 120px;
+  border: none;
+  background-position: 0px -73px;
+  background: url(../img/shop/index/6.png) no-repeat 0 9999px;
+}
+
+
